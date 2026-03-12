@@ -17,8 +17,8 @@ Our app supports a wide range of categories for analysis:
 ## 📝 License & Contact
 
 - **License:** Proprietary. All rights reserved (HEXA CODE).
-- **Email:** [snapstep@gmail.com](mailto:snapstep@gmail.com)
 - **Company:** Developed by the **HEXA CODE** team.
+- **Support:** SnapStep team - [snapstep.admin@gmail.com](mailto:snapstep.admin@gmail.com)
 
 ---
 *The project was created with a focus on premium design and user convenience.*
