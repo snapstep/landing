@@ -1,56 +1,56 @@
 # SnapStep: Snap. Solve. Get it done.
 
-**SnapStep** — это интеллектуальный визуальный помощник на базе ИИ, который превращает вашу камеру в инструмент для решения любых повседневных задач. Просто сделайте снимок, и наше приложение мгновенно предоставит вам необходимую помощь или диагностику.
+**SnapStep** is an intelligent AI-powered visual assistant that transforms your camera into a tool for solving any everyday task. Simply take a photo, and our app instantly provides the necessary help or diagnostics.
 
-## 🚀 Основные возможности
+## 🚀 Key Features
 
-Наше приложение поддерживает широкий спектр категорий для анализа:
+Our app supports a wide range of categories for analysis:
 
-- 🏠 **Ремонт дома** (Home Repair) — Идентификация поломок и инструкции по исправлению.
-- 🚗 **Автомобили** (Automotive) — Диагностика проблем с авто по фото.
-- 💻 **Электроника** (Electronics) — Поиск решений для гаджетов и техники.
-- 🌿 **Растения** (Plants) — Определение видов и советы по уходу.
-- 🍳 **Кулинария** (Food & Cooking) — Распознавание ингредиентов и рецепты.
-- 📄 **Документы** (Documents) — Умное сканирование и обработка текста.
-- ⚠️ **Критический анализ** — Быстрая оценка серьезности ситуации (Critical, High, Medium, Low).
+- 🏠 **Home Repair** — Fault identification and repair instructions.
+- 🚗 **Automotive** — Car problem diagnostics via photo.
+- 💻 **Electronics** — Finding solutions for gadgets and appliances.
+- 🌿 **Plants** — Species identification and care tips.
+- 🍳 **Food & Cooking** — Ingredient recognition and recipes.
+- 📄 **Documents** — Smart scanning and text processing.
+- ⚠️ **Critical Analysis** — Rapid severity assessment (Critical, High, Medium, Low).
 
-## 🛠 Технологический стек
+## 🛠 Tech Stack
 
-Проект разработан с использованием современных инструментов фронтенд-разработки:
+The project is developed using modern frontend development tools:
 
-- **React 19** — Создание динамичного интерфейса.
-- **Vite** — Молниеносная сборка и разработка.
-- **Framer Motion** — Плавные и премиальные анимации.
-- **Lucide-React** — Чистые и понятные иконки.
-- **Vanilla CSS** — Гибкое и стильное оформление.
+- **React 19** — Creating a dynamic interface.
+- **Vite** — Lightning-fast build and development.
+- **Framer Motion** — Smooth and premium animations.
+- **Lucide-React** — Clean and intuitive icons.
+- **Vanilla CSS** — Flexible and stylish styling.
 
-## 💻 Быстрый старт
+## 💻 Quick Start
 
-Чтобы запустить проект локально, выполните следующие шаги:
+To run the project locally, follow these steps:
 
-1.  **Клонируйте репозиторий:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/snapstep/landing.git
     cd landing
     ```
 
-2.  **Установите зависимости:**
+2.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-3.  **Запустите сервер для разработки:**
+3.  **Run the development server:**
     ```bash
     npm run dev
     ```
 
-4.  Откройте браузер по адресу `http://localhost:5173`.
+4.  Open your browser at `http://localhost:5173`.
 
-## 📝 Лицензия и Контакты
+## 📝 License & Contact
 
-- **Лицензия:** Проприетарная. Все права защищены (HEXA CODE).
+- **License:** Proprietary. All rights reserved (HEXA CODE).
 - **Email:** [snapstep@gmail.com](mailto:snapstep@gmail.com)
-- **Компания:** Разработано командой **HEXA CODE** с более чем 10-летним опытом в индустрии ИИ.
+- **Company:** Developed by the **HEXA CODE** team with over 10 years of experience in the AI industry.
 
 ---
-*Проект создан с фокусом на премиальный дизайн и удобство пользователя.*
+*The project was created with a focus on premium design and user convenience.*
