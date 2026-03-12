@@ -1,7 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="container navbar-content">
@@ -10,11 +27,11 @@ const Navbar = () => {
           <span>SnapStep</span>
         </Link>
         <div className="nav-links">
-          <a href="#product" className="nav-link">Product</a>
-          <a href="#features" className="nav-link">Features</a>
-          <a href="#pricing" className="nav-link">Pricing</a>
+          <a href="#product" onClick={(e) => handleNavClick(e, 'product')} className="nav-link">Product</a>
+          <a href="#features" onClick={(e) => handleNavClick(e, 'features')} className="nav-link">Features</a>
+          <a href="#pricing" onClick={(e) => handleNavClick(e, 'pricing')} className="nav-link">Pricing</a>
         </div>
-        <button className="btn btn-primary nav-cta">Download</button>
+        <button className="btn btn-primary nav-cta" onClick={(e) => handleNavClick(e, 'pricing')}>Download</button>
       </div>
       
       <style>{`

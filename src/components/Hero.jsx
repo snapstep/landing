@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="hero section">
+    <section id="product" className="hero section">
       <div className="container">
         <div className="hero-content">
           <motion.div

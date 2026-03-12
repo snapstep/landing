@@ -18,7 +18,7 @@ function App() {
                 <Hero />
                 <Features />
                 {/* Simplified Contact CTA */}
-                <section className="cta section">
+                <section id="pricing" className="cta section">
                   <div className="container">
                     <div className="glass-card cta-content">
                       <h2>Ready to solve?</h2>
