@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../i18n/LanguageContext';
 
 const Privacy = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,22 +17,22 @@ const Privacy = () => {
           animate={{ opacity: 1, y: 0 }}
           className="glass-card legal-content"
         >
-          <Link to="/" className="back-link">← Back to Home</Link>
-          <h1>Privacy Policy</h1>
-          <p className="last-updated">Last Updated: March 12, 2026</p>
-          
+          <Link to="/" className="back-link">{t('privacy.backToHome')}</Link>
+          <h1>{t('privacy.title')}</h1>
+          <p className="last-updated">{t('privacy.lastUpdated')}</p>
+
           <div className="legal-text">
-            <h2>1. Information We Collect</h2>
-            <p>At SnapStep, we prioritize your privacy. When you use our camera-based AI assistant, we process image data locally or securely on our servers to provide you with instant solutions. We do not sell your personal data to third parties.</p>
-            
-            <h2>2. How We Use Your Data</h2>
-            <p>The images you capture are used solely for analysis and problem-solving purposes. We may use anonymized data to improve our AI models and provide a better user experience.</p>
-            
-            <h2>3. Data Security</h2>
-            <p>We implement industry-standard security measures to protect your information. Your connection to our services is encrypted, and we regularly audit our systems for potential vulnerabilities.</p>
-            
-            <h2>4. Your Rights</h2>
-            <p>You have the right to access, correct, or delete your personal information at any time. If you have any questions about your data, please contact our support team.</p>
+            <h2>{t('privacy.section1Title')}</h2>
+            <p>{t('privacy.section1Text')}</p>
+
+            <h2>{t('privacy.section2Title')}</h2>
+            <p>{t('privacy.section2Text')}</p>
+
+            <h2>{t('privacy.section3Title')}</h2>
+            <p>{t('privacy.section3Text')}</p>
+
+            <h2>{t('privacy.section4Title')}</h2>
+            <p>{t('privacy.section4Text')}</p>
           </div>
         </motion.div>
       </div>

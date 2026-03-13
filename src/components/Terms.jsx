@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../i18n/LanguageContext';
 
 const Terms = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,25 +17,25 @@ const Terms = () => {
           animate={{ opacity: 1, y: 0 }}
           className="glass-card legal-content"
         >
-          <Link to="/" className="back-link">← Back to Home</Link>
-          <h1>Terms of Service</h1>
-          <p className="last-updated">Last Updated: March 12, 2026</p>
-          
+          <Link to="/" className="back-link">{t('terms.backToHome')}</Link>
+          <h1>{t('terms.title')}</h1>
+          <p className="last-updated">{t('terms.lastUpdated')}</p>
+
           <div className="legal-text">
-            <h2>1. Acceptance of Terms</h2>
-            <p>By accessing or using SnapStep, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use our services.</p>
-            
-            <h2>2. Use of Service</h2>
-            <p>SnapStep provides an AI-powered assistant that analyzes images to provide information and solutions. You agree to use this service only for lawful purposes and in accordance with these terms.</p>
-            
-            <h2>3. Intellectual Property</h2>
-            <p>All content, features, and functionality of SnapStep are owned by SnapStep AI and are protected by international copyright, trademark, and other intellectual property laws.</p>
-            
-            <h2>4. Limitation of Liability</h2>
-            <p>SnapStep AI shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services.</p>
-            
-            <h2>5. Changes to Terms</h2>
-            <p>We reserve the right to modify these terms at any time. We will notify users of any significant changes by posting the new terms on this page.</p>
+            <h2>{t('terms.section1Title')}</h2>
+            <p>{t('terms.section1Text')}</p>
+
+            <h2>{t('terms.section2Title')}</h2>
+            <p>{t('terms.section2Text')}</p>
+
+            <h2>{t('terms.section3Title')}</h2>
+            <p>{t('terms.section3Text')}</p>
+
+            <h2>{t('terms.section4Title')}</h2>
+            <p>{t('terms.section4Text')}</p>
+
+            <h2>{t('terms.section5Title')}</h2>
+            <p>{t('terms.section5Text')}</p>
           </div>
         </motion.div>
       </div>
