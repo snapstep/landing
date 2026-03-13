@@ -14,6 +14,7 @@ import ComingSoon from './components/ComingSoon';
 
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
+import AccountDeletion from './components/AccountDeletion';
 import { usePageViewTracking } from './hooks/useAnalytics';
 import { trackDownloadClick } from './utils/analytics';
 import { useTranslation } from './i18n/LanguageContext';
@@ -112,6 +113,7 @@ function App() {
             } />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/account-deletion" element={<AccountDeletion />} />
           </Routes>
         </main>
 
@@ -147,6 +149,7 @@ function App() {
                 <h4>{t('footer.legal')}</h4>
                 <Link to="/terms">{t('footer.terms')}</Link>
                 <Link to="/privacy">{t('footer.privacy')}</Link>
+                <Link to="/account-deletion">{t('footer.accountDeletion')}</Link>
                 <a href="#">{t('footer.gdpr')}</a>
               </div>
             </div>
